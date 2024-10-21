@@ -25,7 +25,8 @@ update_config $FILE_PATH_CONFIG "enabled"
 # install ik
 echo 'y' | $FILE_PATH/bin/elasticsearch-plugin install https://github.com/medcl/elasticsearch-analysis-ik/releases/download/v8.12.2/elasticsearch-analysis-ik-8.12.2.zip
 wget -O $FILE_PATH/config/analysis-ik/zh_words.txt https://raw.githubusercontent.com/p208p2002/zh-nlp-dict/main/zh_words.txt
-sed -i "s/ext_dict/zh_words.txt/g" $FILE_PATH/config/analysis-ik/IKAnalyzer.cfg.xml
+sed -i 's/key="ext_dict">/key="ext_dict">zh_words.txt/g' $FILE_PATH/config/analysis-ik/IKAnalyzer.cfg.xml
+
 
 touch $FILE_PATH/config/jvm.options.d/jvm.options
 echo "-Xms4g" >> $FILE_PATH/config/jvm.options.d/jvm.options

@@ -33,6 +33,6 @@ build/
 .vscode/
 
 /src/main/resources/config/application.yml
-/src/main/resources/depoly/elasticsearch/elasticsearch-8.12.2-linux-x86_64.tar.gz
-/src/main/resources/depoly/elasticsearch/FILE_PATH
-/src/main/resources/depoly/elasticsearch/elasticsearch-8.12.2/
+/src/main/resources/deploy/elasticsearch/elasticsearch-8.12.2-linux-x86_64.tar.gz
+/src/main/resources/deploy/elasticsearch/FILE_PATH
+/src/main/resources/deploy/elasticsearch/elasticsearch-8.12.2/
